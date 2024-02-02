@@ -116,7 +116,7 @@ std::string SteamID::getIdSteam2Rendered(bool newerFormat = false) const {
             .append(":")
             .append(std::to_string((this->accountId & 1)))
             .append(":")
-            .append(std::to_string((int) (static_cast<double>(this->accountId) / 2)));
+            .append(std::to_string((int) (this->accountId / 2)));
 
     return steam2;
 }
